@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
     public static void task1(){
         int i=700;
@@ -61,5 +62,19 @@ public class Main {
         byte totalBrown=(byte)(totalClasses*brownColorForClass);
         System.out.println();
         System.out.println("В школе, где "+totalClasses+" классов, нужно "+totalWhite+" банок белой краски и "+totalBrown+" банок коричневой краски");
+    }
+    public static void task6(){
+        byte bananasGr=80;
+        byte bananasCount=5;
+        byte milkGr=105;
+        byte milkCount=2;
+        byte iceCreamGr=100;
+        byte iceCreamCount=2;
+        byte eggGr=70;
+        byte eggCount=4;
+        short cocktail=(short)((bananasGr*bananasCount)+(milkGr*milkCount)+(iceCreamGr*iceCreamCount)+(eggGr*eggCount));
+        float cocktailKg=cocktail/1000f;
+        System.out.println("Масса завтрака в граммах равна "+cocktail);
+        System.out.println("Масса завтрака в килограммах равна "+cocktailKg);
     }
 }
