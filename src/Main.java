@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
     public static void task1(){
         int i=700;
@@ -74,7 +75,20 @@ public class Main {
         byte eggCount=4;
         short cocktail=(short)((bananasGr*bananasCount)+(milkGr*milkCount)+(iceCreamGr*iceCreamCount)+(eggGr*eggCount));
         float cocktailKg=cocktail/1000f;
+        System.out.println();
         System.out.println("Масса завтрака в граммах равна "+cocktail);
         System.out.println("Масса завтрака в килограммах равна "+cocktailKg);
+    }
+    public static void task7(){
+        short looseWeightOne=250;
+        short looseWeightTwo=500;
+        short needLooseWeight=7;
+        byte intervalForOne=(byte)(needLooseWeight/(looseWeightOne*0.001));
+        System.out.println();
+        System.out.println("Если спортсмен будет терять каждый день по 250 грамм, то потребуется "+intervalForOne+" дней");
+        byte intervalForTwo=(byte)(needLooseWeight/(looseWeightTwo*0.001));
+        System.out.println("Если спортсмен будет терять каждый день по 500 грамм, то потребуется "+intervalForTwo+" дней");
+        byte avg=(byte)((intervalForOne+intervalForTwo)/2);
+        System.out.println("Среднее время для похудения равно "+avg+" день");
     }
 }
