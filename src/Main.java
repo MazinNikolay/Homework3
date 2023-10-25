@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
     public static void task1(){
         int i=700;
@@ -90,5 +91,26 @@ public class Main {
         System.out.println("Если спортсмен будет терять каждый день по 500 грамм, то потребуется "+intervalForTwo+" дней");
         byte avg=(byte)((intervalForOne+intervalForTwo)/2);
         System.out.println("Среднее время для похудения равно "+avg+" день");
+    }
+    public static void task8(){
+        int mariaSalary=67760;
+        int mariaSalaryYear=mariaSalary*12;
+        int denSalary=83690;
+        int denSalaryYear=denSalary*12;
+        int xtinSalary=76230;
+        int xtinSalaryYear=xtinSalary*12;
+        int mariaSalaryChanged=(int)(mariaSalary*1.1);
+        int mariaSalaryYearChanged=mariaSalaryChanged*12;
+        int denSalaryChanged=(int)(denSalary*1.1);
+        int denSalaryYearChanged=denSalaryChanged*12;
+        int xtinSalaryChanged=(int)(xtinSalary*1.1);
+        int xtinSalaryYearChanged=xtinSalaryChanged*12;
+        int mariaSalaryDiff=mariaSalaryYearChanged-mariaSalaryYear;
+        int denSalaryDiff=denSalaryYearChanged-denSalaryYear;
+        int xtinSalaryDiff=xtinSalaryYearChanged-xtinSalaryYear;
+        System.out.println();
+        System.out.println("Маша теперь получает "+mariaSalaryChanged+" рублей. Годовой доход вырос на "+mariaSalaryDiff+" рублей");
+        System.out.println("Денис теперь получает "+denSalaryChanged+" рублей. Годовой доход вырос на "+denSalaryDiff+" рублей");
+        System.out.println("Кристина теперь получает "+xtinSalaryChanged+" рублей. Годовой доход вырос на "+xtinSalaryDiff+" рублей");
     }
 }
