@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
     public static void task1(){
         int i=700;
@@ -34,7 +35,8 @@ public class Main {
         byte ann=27;
         byte katy=30;
         short paper=480;
-        int totalPaper=paper/(ann+lida+katy);
+        byte totalPaper=(byte)(paper/(ann+lida+katy));
+        System.out.println();
         System.out.println("На каждого ученика рассчитано "+totalPaper+" листов бумаги");
     }
     public static void task4(){
@@ -49,5 +51,15 @@ public class Main {
         System.out.println("За сутки машина произвела "+bottleDay+" штук бутылок");
         System.out.println("За трое суток машина произвела "+bottleThreeDay+" штук бутылок");
         System.out.println("За месяц машина произвела "+bottleMonth+" штук бутылок");
+    }
+    public static void task5(){
+        byte totalColor=120;
+        byte whiteColorForClass=2;
+        byte brownColorForClass=4;
+        byte totalClasses=(byte)(totalColor/(whiteColorForClass+brownColorForClass));
+        byte totalWhite=(byte)(totalClasses*whiteColorForClass);
+        byte totalBrown=(byte)(totalClasses*brownColorForClass);
+        System.out.println();
+        System.out.println("В школе, где "+totalClasses+" классов, нужно "+totalWhite+" банок белой краски и "+totalBrown+" банок коричневой краски");
     }
 }
